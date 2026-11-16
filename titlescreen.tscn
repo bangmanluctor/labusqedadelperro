@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dhiesdwe0vntg"]
+
+[ext_resource type="PackedScene" uid="uid://djij2lftt1an1" path="res://playbutton.tscn" id="1_cjnew"]
+
+[node name="Titlescreen" type="Control" unique_id=1913680966]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=2119535499]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1741398664]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Title" type="RichTextLabel" parent="PanelContainer/VBoxContainer" unique_id=1765548958]
+layout_mode = 2
+text = "-+LA BUSQEDA+- "
+fit_content = true
+autowrap_mode = 0
+
+[node name="PLAY" parent="PanelContainer/VBoxContainer" unique_id=1844696689 instance=ExtResource("1_cjnew")]
+layout_mode = 2
+text = "-+PLAY+-"
+
+[node name="OPTIONS" parent="PanelContainer/VBoxContainer" unique_id=731698734 instance=ExtResource("1_cjnew")]
+layout_mode = 2
+text = "-+OPTIONS+-"
+
+[node name="QUIT" parent="PanelContainer/VBoxContainer" unique_id=164547803 instance=ExtResource("1_cjnew")]
+layout_mode = 2
+text = "-+QUIT+-"
